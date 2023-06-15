@@ -9,7 +9,7 @@ const SizeSelection = ( {boba, size, setSize}) => {
     
      <div className='flex gap-x-12 items-baseline mb-10 font-medium'>
       <label className=' flex flex-col items-center gap-x-2 cursor-pointer'>
-        <Image  className={`${size === 'small' ? ' border-orange transition-all duration-200' : 'border-transparent filter saturate-[.1]' }`} src={boba.image} width={60} height={60} alt=''/>
+        <Image  className={`${size === 'small' ? ' border-orange lg:hover:-translate-y-1 transition-all duration-200' : 'border-transparent filter saturate-[.1] lg:hover:-translate-y-1 transition-all duration-200' }`} src={boba.image} width={60} height={60} alt=''/>
         <input 
         type="radio" 
         name='size' 
@@ -21,7 +21,7 @@ const SizeSelection = ( {boba, size, setSize}) => {
       </label>
 
       <label className=' flex flex-col items-center gap-x-2 cursor-pointer'>
-        <Image  className={`${size === 'medium' ? ' border-orange  transition-all duration-200' : 'border-transparent filter saturate-[.1]' }`} src={boba.image} width={70} height={70} alt=''/>
+        <Image  className={`${size === 'medium' ? ' border-orange lg:hover:-translate-y-1 transition-all duration-200' : 'border-transparent filter saturate-[.1] lg:hover:-translate-y-1 transition-all duration-200' }`} src={boba.image} width={70} height={70} alt=''/>
         <input 
         type="radio" 
         name='size' 
@@ -33,7 +33,7 @@ const SizeSelection = ( {boba, size, setSize}) => {
       </label>
 
       <label className=' flex flex-col items-center gap-x-2 cursor-pointer'>
-        <Image  className={`${size === 'large' ? ' border-orange  transition-all duration-200' : 'border-transparent filter saturate-[.1]' }`} src={boba.image} width={80} height={80} alt=''/>
+        <Image  className={`${size === 'large' ? ' border-orange  lg:hover:-translate-y-1 transition-all duration-200' : 'border-transparent filter saturate-[.1] lg:hover:-translate-y-1 transition-all duration-200' }`} src={boba.image} width={80} height={80} alt=''/>
         <input 
         type="radio" 
         name='size' 

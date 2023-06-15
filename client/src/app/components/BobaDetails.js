@@ -51,12 +51,12 @@ const BobaDetails = ({ boba }) => {
             </div>
 
 
-        <div className='bg-pink-100 flex flex-col flex-1'>
+        <div className='flex flex-col flex-1'>
             <div className='flex-1 p-2 text-center lg:text-left'>
-                <div className='flex-1 bg-white overflow-y-scroll h-[46vh] scrollbar-thin scrollbar-thumb-grey-500 scrollbar-track-white pr-2 '>
+                <div className='flex-1 bg-white overflow-y-scroll h-[36vh] scrollbar-thin scrollbar-thumb-red-200  '>
                     <div className='font-semibold'>
                         <h2 className='capitalize text-3xl mb-1'>{boba.name}</h2>
-                        <div className='bg-yellow-200 mb-6 text-lg font-medium'>
+                        <div className=' mb-6 text-lg font-medium'>
                             <span>{ size === 'small' ? '350 ml' : size === 'medium' ? '500 ml' :
                             size === 'large' ? '700 ml' : null }</span>
                             <span>, {suger} Suger</span>
@@ -64,7 +64,7 @@ const BobaDetails = ({ boba }) => {
                     </div>
 
                     <SizeSelection boba={boba} size={size} setSize={setSize}/> 
-                    <SugerSelection/>
+                    <SugerSelection suger={suger} setSuger={setSuger}/>
                     <div>Choose Toppings</div>
                     <div>
                         {boba.toppings?.map((topping, index) => {
