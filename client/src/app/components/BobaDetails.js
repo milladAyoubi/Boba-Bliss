@@ -65,10 +65,14 @@ const BobaDetails = ({ boba }) => {
 
                     <SizeSelection boba={boba} size={size} setSize={setSize}/> 
                     <SugerSelection suger={suger} setSuger={setSuger}/>
-                    <div>Choose Toppings</div>
-                    <div>
+                    <div className='mb-4 text-xl font-semibold'>Choose Toppings</div>
+                    <div className='flex flex-1 flex-wrap gap-2 py-1 justify-center lg:justify-start'>
                         {boba.toppings?.map((topping, index) => {
-                            return <Topping key={index}/>
+                            return <Topping  
+                            topping={topping} 
+                            setToppings={setToppings} 
+                            setToppingsPrice={setToppingsPrice}
+                            key={index}/>
                         })}
                     </div>
                 </div>
