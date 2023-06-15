@@ -6,8 +6,7 @@ import SugerSelection from './SugerSelection';
 import Topping from './Topping';
 
 const BobaDetails = ({ boba }) => {
-    console.log(boba)
-
+   
     const [size, setSize] = useState('large')
 
     const [suger, setSuger] = useState('100% ')
@@ -39,7 +38,7 @@ const BobaDetails = ({ boba }) => {
         }
     }, [toppings])
 
-    console.log(price)
+    
 
     return (
     
@@ -64,14 +63,15 @@ const BobaDetails = ({ boba }) => {
                     </div>
 
                     <SizeSelection boba={boba} size={size} setSize={setSize}/> 
+                    <div className='mb-4 text-xl font-semibold'>Suger Amount</div>
                     <SugerSelection suger={suger} setSuger={setSuger}/>
                     <div className='mb-4 text-xl font-semibold'>Choose Toppings</div>
                     <div className='flex flex-1 flex-wrap gap-2 py-1 justify-center lg:justify-start'>
                         {boba.toppings?.map((topping, index) => {
                             return <Topping  
                             topping={topping} 
+                            toppings={toppings} 
                             setToppings={setToppings} 
-                            setToppingsPrice={setToppingsPrice}
                             key={index}/>
                         })}
                     </div>

@@ -3,7 +3,7 @@ const SugerSelection = ({suger, setSuger}) => {
     
       
     <div className="">
-         <p className="mb-4 font-bold">Suger Content</p>
+      
         <div className="flex gap-x-5 mb-8 font-medium justify-center lg:justify-start">
             <label className="flex items-center gap-x-2 cursor-pointer ">
                 <input  
