@@ -8,7 +8,7 @@ import Topping from './Topping';
 const BobaDetails = ({ boba }) => {
     console.log(boba)
 
-    const [size, setSize] = useState('medium')
+    const [size, setSize] = useState('large')
 
     const [suger, setSuger] = useState('100% ')
 
@@ -63,7 +63,7 @@ const BobaDetails = ({ boba }) => {
                         </div>
                     </div>
 
-                    <SizeSelection boba={boba} size={boba} setSize={setSize}/> 
+                    <SizeSelection boba={boba} size={size} setSize={setSize}/> 
                     <SugerSelection/>
                     <div>Choose Toppings</div>
                     <div>
