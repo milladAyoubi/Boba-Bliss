@@ -5,10 +5,10 @@ import Banner from './components/Banner';
 // pizza data
 const boba = [{
         id: 1,
-        name: 'capricciosa',
+        name: 'Orginal Milk Tea',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
         image: '/Boba-Milk-Tea.png',
-        priceSm: 9.99,
+        priceSm: 5.99,
         priceMd: 10.99,
         priceLg: 11.99,
         toppings: [{
@@ -40,10 +40,10 @@ const boba = [{
     },
     {
         id: 2,
-        name: 'cheesy',
+        name: 'Mango Smoothie',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
         image: '/Boba-Smoothie.png',
-        priceSm: 10.99,
+        priceSm: 6.99,
         priceMd: 11.99,
         priceLg: 12.99,
         toppings: [{
