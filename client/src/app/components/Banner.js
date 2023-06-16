@@ -7,10 +7,12 @@ import {
 
 const Banner = () => {
     return (
-    <section className="bg-orange bg-pattern">
-      <div className="container mx-auto min-h-[768px] flex items-center justfy-center">
+    <section className=" bg-pattern  ">
+      <div className="container mx-auto min-h-[760px]  flex items-center justfy-center">
         Banner
       </div>
+    
+      
     </section>
     
     
