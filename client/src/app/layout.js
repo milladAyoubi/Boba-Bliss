@@ -1,8 +1,13 @@
 // css
 import './globals.css';
 import { Raleway, Poppins, OpenSans } from 'next/font/google'
+
+
 import Nav from './components/Nav';
 import CartMobileIcon from './components/CartMobileIcon';
+import CartProvider from './context/CartContext'
+
+
 const raleway = Raleway({
   subsets: ['latin'],
   variable: '--font-raleway',
@@ -18,6 +23,8 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }) {
     return ( 
+
+      <CartProvider>
       <html lang = 'en' >
         <body className={`${raleway.variable} ${poppins.variable} font-poppins`}> 
         <Nav/>
@@ -26,5 +33,6 @@ export default function RootLayout({ children }) {
         
         </body>
       </html >
+      </CartProvider>
     );
 }
