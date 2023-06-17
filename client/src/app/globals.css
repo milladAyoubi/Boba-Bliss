@@ -39,8 +39,19 @@
   .input {
     @apply py-4 px-6;
   }
+
+  .section-title {
+    @apply text-2xl lg:text-[40px] font-bold leading-normal mb-6;
+  }
+  .section-subtitle {
+    @apply mt-6 mb-8;
+  }
   .textarea {
     @apply resize-none py-4 px-6;
+  }
+
+  .btn {
+    @apply h-[60px] px-4 rounded-full  transition flex items-center text-lg font-medium outline-none;
   }
   .input,
   .textarea {

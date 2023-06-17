@@ -37,7 +37,10 @@ module.exports = {
             },
             backgroundImage: {
                 pattern: "url('/pattern.png')",
+                promo: "url('/promo.png')",
             },
+
+
             backgroundSize: {
                 'size-200': '200% 200%',
             },
