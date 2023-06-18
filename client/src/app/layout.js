@@ -6,6 +6,7 @@ import { Raleway, Poppins, OpenSans } from 'next/font/google'
 import Nav from './components/Nav';
 import CartMobileIcon from './components/CartMobileIcon';
 import CartProvider from './context/CartContext'
+import CartMobile from './components/CartMobile';
 
 
 const raleway = Raleway({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <body className={`${raleway.variable} ${poppins.variable} font-poppins`}> 
         <Nav/>
         <CartMobileIcon/>
+        <CartMobile/>
         { children } 
         
         </body>

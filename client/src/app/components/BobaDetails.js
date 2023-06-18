@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 
 import SizeSelection from './SizeSelection'
 import SugerSelection from './SugerSelection';
 import Topping from './Topping';
+import { CartContext } from '../context/CartContext';
+
+
 
 const BobaDetails = ({ boba }) => {
    
@@ -17,6 +20,9 @@ const BobaDetails = ({ boba }) => {
 
     const [price, setPrice] = useState(0);
 
+    const {addToCart} = useContext(CartContext)
+
+
     useEffect(() => {
         size === 'small' ? setPrice(parseFloat(boba.priceSm + toppingsPrice).toFixed(2)) 
         : 
@@ -25,6 +31,9 @@ const BobaDetails = ({ boba }) => {
         size === 'large' ? setPrice(parseFloat(boba.priceLg + toppingsPrice).toFixed(2)) 
         : null;
     })
+
+
+
 
     useEffect(() => {
         if (toppings.length > 0) {
@@ -79,7 +88,7 @@ const BobaDetails = ({ boba }) => {
             </div>
 
             <div className='h-full flex items-center px-2 lg:items-end'>
-                <button className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
+                <button onClick={()=> addToCart(boba.id, boba.image, boba.name, price, toppings, size, suger)} className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
                 <div>Add To Cart For</div>
                 <div>$ {price} </div> 
                     
