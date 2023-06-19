@@ -14,8 +14,9 @@ const CartMobile = () => {
    
     <CartTop/>
     <div>{cart?.map((boba, index)=> {
-      return <CartItem key={index}/>;
+      return <CartItem boba={boba} key={index}/>;
     })}
+
     </div>
     <CartBottom/>
   </div>
