@@ -4,8 +4,8 @@ import {IoCloseOutline} from 'react-icons/io5';
 
 const CartItem = ({boba}) => {
   return (
-  <div className="bg-pink-100 select-none">
-    <div className='flex gap-x-4 mb-2 '>
+  <div className=" select-none">
+    <div className='flex gap-x-4 mb-2'>
     
       <div className='flex justify-center items-center'>
         <Image src={boba.image} width={90} height={90} alt=''/>
@@ -40,7 +40,16 @@ const CartItem = ({boba}) => {
      
     </div>
 
-    <div>Toppings</div>
+    <div className='flex flex-wrap items-center gap-3 p-6 border-b border-black/10'>
+      <div className='font-semibold'>Toppings: {boba.toppings.length === 0 && 'None'}</div>
+      {
+        boba.toppings.map((topping, index)=> {
+          return <div className='capitalize text-sm gradient font-medium px-3 py-1 rounded-full leading-none'key={index}>
+            {topping.name}
+            </div>
+        })
+      }
+    </div>
   </div>
   
   );

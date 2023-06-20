@@ -7,9 +7,9 @@ const CartTop = () => {
   useContext(CartContext)
   return (
   <div className='w-full h-20 border-b flex items-center justify-content px-10 '>
-    <div className='font-semibold'>Shopping Bag(3)</div>
+    <div className='font-semibold'>Shopping Bag</div>
   <div onClick={()=> setIsOpen(false)}>
-    <IoCloseOutline className='text-3xl group-hover:scale-110 duration-300 transition-all'/>
+    <IoCloseOutline className='text-3xl group-hover:scale-110 duration-300 transition-all cursor-pointer'/>
   </div>
   </div>
   );

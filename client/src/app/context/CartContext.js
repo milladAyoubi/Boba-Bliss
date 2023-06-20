@@ -1,6 +1,6 @@
 "use client";
 import { Poppins } from "next/font/google";
-import React, {createContext, use, useState} from "react";
+import React, {createContext,  useState} from "react";
 import CartMobileIcon from "../components/CartMobileIcon";
 
 export const CartContext = createContext();
@@ -23,7 +23,7 @@ const CartProvider = ({children}) => {
         ) => {
         console.log(id, image, name, price, toppings, size, suger)
 
-        toppings.sort((a,b) => a.name.localCompare(b.name))
+        toppings.sort((a,b) => a.name.localeCompare(b.name))
 
         const newItem = {
             id, image, name, price, toppings, size, suger, amount: 1

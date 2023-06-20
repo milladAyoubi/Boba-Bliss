@@ -13,7 +13,13 @@ const CartMobile = () => {
   fixed w-full h-full left-0 z-20 transition-all duration-300 lg:hidden flex flex-col`}>
    
     <CartTop/>
-    <div>{cart?.map((boba, index)=> {
+    <div className={`px-4 flex flex-col gap-y-4 py-2 mr-4 mt-8 
+    h-[60vh]  overflow-y-scroll scrollbar-thin scrollbar-thumb-secondary
+    ${cart.length >= 3
+       ? 'scrollbar-track-black/10'
+        : 'scrollbar-track-transparent'}`}>
+          
+          {cart?.map((boba, index)=> {
       return <CartItem boba={boba} key={index}/>;
     })}
 
