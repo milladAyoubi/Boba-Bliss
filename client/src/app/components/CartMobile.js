@@ -10,7 +10,7 @@ const CartMobile = () => {
   const { cart, isOpen } = useContext(CartContext)
   return (
   <div className={`${isOpen ? 'bottom-0' : '-bottom-full'} bg-white 
-  fixed w-full h-full left-0 z-20 transition-all duration-300 lg:hidden flex flex-col`}>
+  fixed w-full h-full left-0 z-20 transition-all duration-300 flex flex-col lg:hidden`}>
    
     <CartTop/>
     <div className={`px-4 flex flex-col gap-y-4 py-2 mr-4 mt-8 
