@@ -5,7 +5,7 @@ import SizeSelection from './SizeSelection'
 import SugerSelection from './SugerSelection';
 import Topping from './Topping';
 import { CartContext } from '../context/CartContext';
-
+import Boba from './Boba';
 
 
 const BobaDetails = ({ boba }) => {
@@ -22,6 +22,7 @@ const BobaDetails = ({ boba }) => {
 
     const {addToCart} = useContext(CartContext)
 
+    
 
     useEffect(() => {
         size === 'small' ? setPrice(parseFloat(boba.priceSm + toppingsPrice).toFixed(2)) 
@@ -86,9 +87,15 @@ const BobaDetails = ({ boba }) => {
                     </div>
                 </div>
             </div>
+        
 
             <div className='h-full flex items-center px-2 lg:items-end'>
-                <button onClick={()=> addToCart(boba.id, boba.image, boba.name, price, toppings, size, suger)} className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
+                <button onClick={()=> {
+                    
+                    addToCart(boba.id, boba.image, boba.name, price, toppings, size, suger);
+                    
+                    
+                    } } className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
                 <div>Add To Cart For</div>
                 <div>$ {price} </div> 
                     

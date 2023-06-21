@@ -19,10 +19,12 @@ const modalStyles = {
     },
 }
 
-const Boba = ({boba}) => {
+const Boba = ({boba }) => {
     console.log(boba)
-
+   
     const [modal, setModal] = useState(false);
+    
+
 
     const openModal = () => {
         setModal(true);
@@ -31,6 +33,8 @@ const Boba = ({boba}) => {
     const closeModal = () => {
         setModal(false);
     }
+
+   
     return (
     
     <div className="group py-2  px-4 xl:py-4 xl:-px-2 rounded-xl lg:relative bottom-40">

@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import { useContext } from 'react';
 import {BiPlus, BiMinus} from 'react-icons/bi';
 import {IoCloseOutline} from 'react-icons/io5';
+import { CartContext } from '../context/CartContext';
 
 const CartItem = ({boba}) => {
+  const { removeItem } = useContext(CartContext)
+
   return (
   <div className=" select-none">
     <div className='flex gap-x-4 mb-2'>
@@ -30,7 +34,7 @@ const CartItem = ({boba}) => {
           </div>
         </div>
           <div className='flex flex-col justify-between'>
-          <div className='text-2xl flex justify-center items-center self-end cursor-pointer hover:scale-110 duration-100 transition-all text-orange'>
+          <div onClick={()=> removeItem(boba.id, boba.price, boba.suger)}className='text-2xl flex justify-center items-center self-end cursor-pointer hover:scale-110 duration-100 transition-all text-orange'>
             <IoCloseOutline/>
           </div>
         <div>

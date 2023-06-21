@@ -43,8 +43,8 @@ const CartBottom = () => {
       
       
       ) : (
-        <div className='absolute top-0 w-fill h-full flex justify-center items-center -z-10'>
-          <div className='font-semibold'>Your Cart Is Empty</div>
+        <div className='absolute top-0 left-[30%] w-fill h-full flex justify-center items-center z-10'>
+          <div className='font-semibold '>Your Cart Is Empty</div>
         </div>
       )}
 
