@@ -5,7 +5,7 @@ import {IoCloseOutline} from 'react-icons/io5';
 import { CartContext } from '../context/CartContext';
 
 const CartItem = ({boba}) => {
-  const { removeItem } = useContext(CartContext)
+  const { removeItem, incAmount, decAmount, cartAmount } = useContext(CartContext)
 
   return (
   <div className=" select-none">
@@ -21,13 +21,13 @@ const CartItem = ({boba}) => {
             <div className='capitalize font-medium text-[15px]'> Suger: {boba.suger}</div>
             <div className='capitalize mb-2 font-medium text-[15px]'>Size: {boba.size}</div>
             <div className='flex items-center gap-x-1'>
-              <div className='w-[18px] h-[18px] flex justify-center items-center cursor-pointer text-white gradient rounded-full'>
+              <div onClick={() => decAmount(boba.id, boba.price)} className='w-[18px] h-[18px] flex justify-center items-center cursor-pointer text-white gradient rounded-full'>
                 <BiMinus/>
               </div>
               <div className='font-semibold flex flex-1 max-w-[30px] justify-center items-center text-sm'>
-                  4
+                 {boba.amount}
               </div>
-              <div className='w-[18px] h-[18px] flex justify-center items-center cursor-pointer text-white gradient rounded-full'>
+              <div onClick={() => incAmount(boba.id, boba.price)}className='w-[18px] h-[18px] flex justify-center items-center cursor-pointer text-white gradient rounded-full'>
                 <BiPlus/>
               </div>
             </div>

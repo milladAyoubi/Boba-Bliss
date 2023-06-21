@@ -16,7 +16,7 @@ const modalStyles = {
 Modal.setAppElement('body')
 
 const CartBottom = () => {
-  const { setIsOpen, cart } = useContext(CartContext);
+  const { setIsOpen, cart, cartTotal } = useContext(CartContext);
   const [modal, setModal ] = useState(false);
 
   const openModal = () => {
@@ -34,7 +34,7 @@ const CartBottom = () => {
       <div className='px-6 py-3 lg:py-6 mt-auto'>
           <div className='flex items-center justify-between mb-6 text-lg font-semibold'>
               <div>Total: </div>
-              <div>$320</div>
+              <div>${parseFloat(cartTotal).toFixed(2)}</div>
           </div>
           <div className='flex flex-col gap-y-3'>
             <button onClick={()=> {setIsOpen(false), openModal(true)}}className='btn btn-lg gradient font-semibold flex justify-center'>Checkout</button>

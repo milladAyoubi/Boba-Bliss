@@ -12,7 +12,7 @@ const CartMobileIcon = () => {
         cursor-pointer fixed right-[10%] bottom-[5%] z-20 lg:hidden'> 
         
         <BsHandbagFill className = 'text-4xl'/>  
-        <span className ='absolute text-white bottom-3 right-4 gradient w-5 h-5 flex justify-center items-center
+        <span className =' bg-red-600 absolute text-white bottom-3 right-4  w-5 h-5 flex justify-center items-center
         rounded-full text-[13px]'>
             4
         </span> 

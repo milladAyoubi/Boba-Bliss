@@ -19,7 +19,7 @@ const modalStyles = {
     },
 }
 
-const Boba = ({boba }) => {
+const Boba = ({boba}) => {
     console.log(boba)
    
     const [modal, setModal] = useState(false);
@@ -61,7 +61,7 @@ const Boba = ({boba }) => {
             <div onClick={closeModal} className="absolute z-30 right-2 top-2 hover:scale-110 duration-200 cursor-pointer">
                 <IoCloseOutline className="text-4xl text-orange"/>
             </div>
-            <BobaDetails boba={boba} modal={modal} setModal={setModal} />
+            <BobaDetails boba={boba}  modal={modal} setModal={setModal} />
         </Modal>}
     </div>
     

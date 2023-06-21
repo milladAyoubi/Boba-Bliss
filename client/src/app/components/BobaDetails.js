@@ -8,8 +8,10 @@ import { CartContext } from '../context/CartContext';
 import Boba from './Boba';
 
 
-const BobaDetails = ({ boba }) => {
+const BobaDetails = ({ boba, modal, setModal }) => {
    
+   
+    
     const [size, setSize] = useState('large')
 
     const [suger, setSuger] = useState('100% ')
@@ -93,9 +95,9 @@ const BobaDetails = ({ boba }) => {
                 <button onClick={()=> {
                     
                     addToCart(boba.id, boba.image, boba.name, price, toppings, size, suger);
+                    setModal(false)
                     
-                    
-                    } } className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
+                    }  } className='btn btn-lg gradient w-full flex justify-center gap-x-2'>
                 <div>Add To Cart For</div>
                 <div>$ {price} </div> 
                     
