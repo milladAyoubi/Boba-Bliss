@@ -14,10 +14,10 @@ const Banner = () => {
             <div className="flex flex-col text-center gap-6 lg:text-left">
              
               <h1 className="text-3xl lg:text-6xl font-poppins font-extrabold text-indigo ">
-              Boba That Will  <br/> Make You Climax
+              Boba Made With   <br/> Delight In Every Sip
               </h1>
               <p className="text-xl lg:text-xl font-poppins text-indigo">
-              Here at Boba Hub we are committed to providing a <br/> orgasmic  feeling in your mouth while staying true <br/> to company values
+              Immerse yourself in our menu of handcrafted bubble tea  <br/> Meticulously curated to satisfy your taste buds and leave <br/> you wanting more!
               </p>
             </div>
           </MouseParallaxChild>

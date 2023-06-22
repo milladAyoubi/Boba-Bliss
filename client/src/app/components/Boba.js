@@ -37,7 +37,7 @@ const Boba = ({boba}) => {
    
     return (
     
-    <div className="group py-2  px-4 xl:py-4 xl:-px-2 rounded-xl lg:relative bottom-40">
+    <div className="group py-2  px-4 xl:py-4 xl:-px-2 rounded-xl lg:relative bottom-28">
         <Image onClick={openModal} className="lg:group-hover:-translate-y-5 transition-all duration-300 mb-8 cursor-pointer" 
         width={270} height={270} src={boba.image} alt='' priority={1} />
         
