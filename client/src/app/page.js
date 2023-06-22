@@ -7,7 +7,7 @@ import Promo from './components/Promo'
 const boba = [{
         id: 1,
         name: 'Orginal Milk Tea',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+        description: 'Every sip of Original Milk Tea takes you on a sensory journey. We start with handpicked tea leaves. Sourced from the finest tea gardens.',
         image: '/Boba-Milk-Tea.png',
         priceSm: 5.99,
         priceMd: 10.99,
@@ -42,7 +42,7 @@ const boba = [{
     {
         id: 2,
         name: 'Straw-Banana Smoothie',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+        description: 'Made with the perfect blend of ripe strawberries and creamy bananas, this refreshing beverage is a true indulgence for fruit lovers.',
         image: '/SM-Smoothie.png',
         priceSm: 6.99,
         priceMd: 11.99,
@@ -77,7 +77,7 @@ const boba = [{
     {
         id: 3,
         name: 'Passion Drink Smoothie',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+        description: 'Escape to a tropical oasis with our irresistible Passion Drink Smoothie. This vibrant blend of tangy passion fruit and luscious mango.',
         image: '/PP-Smoothie.png',
         priceSm: 10.99,
         priceMd: 11.99,
@@ -112,7 +112,7 @@ const boba = [{
     {
         id: 4,
         name: 'Matcha Milk Tea',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+        description: 'Indulge in the allure of our Matcha Milk Tea, where the centuries-old tradition of matcha meets the creamy indulgence of milk.',
         image: '/M-Milk-Tea.png',
         priceSm: 11.99,
         priceMd: 12.99,
