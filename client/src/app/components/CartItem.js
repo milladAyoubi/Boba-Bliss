@@ -48,7 +48,7 @@ const CartItem = ({boba}) => {
       <div className='font-semibold'>Toppings: {boba.toppings.length === 0 && 'None'}</div>
       {
         boba.toppings.map((topping, index)=> {
-          return <div className='capitalize text-sm gradient font-medium px-3 py-1 rounded-full leading-none'key={index}>
+          return <div className='capitalize text-sm gradient font-medium px-3 py-1 rounded-full leading-none' key={index}>
             {topping.name}
             </div>
         })
