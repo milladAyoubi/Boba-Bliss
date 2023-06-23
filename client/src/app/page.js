@@ -34,7 +34,7 @@ const boba = [{
             },
             {
                 image: '/Topping-Matcha.png',
-                name: 'Match Jelly',
+                name: 'Matcha Jelly',
                 price: 2,
             },
         ],
@@ -69,7 +69,7 @@ const boba = [{
         },
         {
             image: '/Topping-Matcha.png',
-            name: 'Match Jelly',
+            name: 'Matcha Jelly',
             price: 2,
         },
     ],
@@ -104,7 +104,7 @@ const boba = [{
         },
         {
             image: '/Topping-Matcha.png',
-            name: 'Match Jelly',
+            name: 'Matcha Jelly',
             price: 2,
         },
     ],
@@ -139,7 +139,7 @@ const boba = [{
         },
         {
             image: '/Topping-Matcha.png',
-            name: 'Match Jelly',
+            name: 'Matcha Jelly',
             price: 2,
         },
     ],

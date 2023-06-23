@@ -9,11 +9,11 @@ const CheckoutDetails = ({setModal}) => {
 
   return (
   <div>
-    <div>
-      <h2>Shipping & Checkout</h2>
-      <div className='h-[86vh] lg:h-[47.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
+    <div className="lg:gap-x-8 h-full lg:px-12 lg:py-8 ">
+      <h2 className="mb-6 text-[20px] uppercase font-bold text-center">Shipping & Checkout</h2>
+      <div className='h-[80vh] lg:h-[40.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
 
-        <div className="bg-green-200 flex 1 h-full overflow-y-auto lg:overflow-visible py-4 px-8 lg:py-0 lg:px-0">
+        <div className=" flex-1 h-full overflow-y-auto lg:overflow-visible py-4 px-8 lg:py-0 lg:px-0">
          
           <div className="flex flex-col gap-4 h-full">
 
@@ -55,11 +55,11 @@ const CheckoutDetails = ({setModal}) => {
             <div className="flex justify-between gap-x-4">
               <input type="text" 
               className="w-full input" 
-              placeholder="Block"/>
+              placeholder="Postel Code"/>
 
               <input type="text" 
               className="w-full input" 
-              placeholder="Floor"/>
+              placeholder="Unit No."/>
 
                 <input type="text" 
               className="w-full input" 
@@ -68,14 +68,44 @@ const CheckoutDetails = ({setModal}) => {
             </div>
             
 
-              
+              <div>
+                <textarea className="textarea w-full h-full" placeholder="Message (Optional)"></textarea>
+              </div>
 
             
           </div>
         </div>
 
-        <div className="bg-yellow-200 1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
-          Box 2
+        <div className="bg-yellow-200 flex-1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
+         <div>
+          <h3>Your Order</h3> 
+          <div >
+            {cart.map((boba, index) => {
+              return (
+              <div>
+                  <div className="flex justify-between text-[15px] mt-2" key={index}>
+                    <div>{boba.name}</div>
+                  
+                    <div>{boba.amount >= 1 && `x ${boba.amount}`}</div>
+                  </div>
+                  <div className="flex flex-wrap gap-x-4 my-0.5 text-[12px]">
+                    {boba.toppings.map((toppings, i) => {
+                      return (  
+                        
+                    <div key={i}>{toppings.name}</div>
+                      
+                      
+                      );
+                    })}
+                  </div>
+                  <div>
+                    ${parseFloat(boba.price * boba.amount).toFixed(2)}
+                  </div>
+              </div>
+              );
+            })}
+          </div>
+         </div>
         </div>
         </div>
       </div>

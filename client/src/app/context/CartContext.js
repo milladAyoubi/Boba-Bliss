@@ -5,6 +5,7 @@ import CartMobileIcon from "../components/CartMobileIcon";
 import { Boba } from "../components/Boba";
 export const CartContext = createContext();
 
+
 const CartProvider = ({ children }) => {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -126,7 +127,7 @@ useEffect(() => {
    
 
     console.log(cart)
-    console.log(cartAmount())
+    
     return ( <CartContext.Provider value = {
             { isOpen, 
               setIsOpen, 
