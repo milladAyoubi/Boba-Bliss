@@ -13,7 +13,7 @@ const CheckoutDetails = ({setModal}) => {
       <h2 className="mb-6 text-[20px] uppercase font-bold text-center">Shipping & Checkout</h2>
       <div className='h-[80vh] lg:h-[40.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
 
-        <div className=" flex-1 h-full overflow-y-auto lg:overflow-visible py-4 px-8 lg:py-0 lg:px-0">
+        <div className=" min-h-[400px] flex-1 h-full overflow-y-auto lg:overflow-visible py-4 px-8 lg:py-0 lg:px-0">
          
           <div className="flex flex-col gap-4 h-full">
 
@@ -76,7 +76,7 @@ const CheckoutDetails = ({setModal}) => {
           </div>
         </div>
 
-        <div className="bg-yellow-200 flex-1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
+        <div className=" flex-1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
          <div>
           <h3>Your Order</h3> 
           <div >
