@@ -83,8 +83,8 @@ const CheckoutDetails = ({setModal}) => {
           <div >
             {cart.map((boba, index) => {
               return (
-              <div>
-                  <div className="flex justify-between text-[15px] mt-2" key={index}>
+              <div key={index}>
+                  <div className="flex justify-between text-[15px] mt-2" >
                     <div>{boba.name}</div>
                   
                     <div>{boba.amount >= 1 && `x ${boba.amount}`}</div>
