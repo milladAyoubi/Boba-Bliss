@@ -8,7 +8,7 @@ const CheckoutDetails = ({setModal}) => {
 
 
   return (
-  <div>
+  <div> 
     <div className="lg:gap-x-8 h-full lg:px-12 lg:py-8 ">
       <h2 className="mb-6 text-[20px] uppercase font-bold text-center">Shipping & Checkout</h2>
       <div className='h-[80vh] lg:h-[40.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
@@ -29,6 +29,7 @@ const CheckoutDetails = ({setModal}) => {
 
 
             <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 lg:gap-x-4">
+              
               <input type="text" 
               className="w-full input" 
               placeholder="Phone"/>
