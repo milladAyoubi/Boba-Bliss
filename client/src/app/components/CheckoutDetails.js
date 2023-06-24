@@ -1,3 +1,4 @@
+"use client"
 import React,{useState,useEffect,useContext} from "react";
 import Image from 'next/image'
 import { CartContext } from "../context/CartContext";
@@ -5,7 +6,6 @@ import { CartContext } from "../context/CartContext";
 
 const CheckoutDetails = ({setModal}) => {
   const { cart, setCart, cartTotal} = useContext(CartContext)
-
 
   return (
   <div> 
