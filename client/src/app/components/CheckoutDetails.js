@@ -79,11 +79,11 @@ const CheckoutDetails = ({setModal}) => {
 
         <div className=" flex-1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
          <div>
-          <h3>Your Order</h3> 
+          <h3 className="">Your Order</h3> 
           <div >
             {cart.map((boba, index) => {
               return (
-              <div key={index}>
+              <div className="border-t border-black/10 pt-2 pb-1 mt-3" key={index}>
                   <div className="flex justify-between text-[15px] mt-2" >
                     <div>{boba.name}</div>
                   
