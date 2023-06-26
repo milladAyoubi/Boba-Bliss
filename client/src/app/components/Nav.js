@@ -8,7 +8,7 @@ import { CartContext } from "../context/CartContext";
 const Nav = () => {
   const {isOpen, setIsOpen, itemAmount} = useContext(CartContext)
   return (
-  <nav className=" w-full py-4 z-10 fixed  ">
+  <nav className=" w-full py-4 z-10 relative ">
       <div className="container mx-auto flex flex-col lg: lg:flex-row gap-y-3 justify-between items-center">
         <Link href="#">
           <Image src={'logo.svg'} width={180} height={180} alt='' ></Image>

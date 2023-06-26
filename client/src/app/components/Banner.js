@@ -7,7 +7,7 @@ import {
 
 const Banner = () => {
     return (
-    <section className=" bg-pattern bg-no-repeat bg-cover lg:min-h-[768px]  pt-16 lg:pt-16 relative bottom-16">
+    <section className=" bg-pattern bg-no-repeat bg-cover lg:min-h-[768px]  pt-12 lg:pt-28 relative bottom-28">
       <div className="container mx-auto lg:min-h-[788px] min-h-[620px]  flex items-center justfy-center relative top-20 lg:top-0 lg:bottom-12">
         <MouseParallaxContainer globalFactorX={0.1} globalFactory={0.1} resetOnLeave className="w-full flex flex-col lg:flex-row justify-between items-center">
           <MouseParallaxChild factorX={0.1} factorY={0.1} >
