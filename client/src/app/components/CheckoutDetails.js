@@ -27,14 +27,16 @@ const CheckoutDetails = ({setModal}) => {
   })
 
   useEffect(()=> {
+    if(successMsg) {
     const timer = setTimeout(()=> {
       setSuccessMsg(false)
-
       setCart([])
       setModal(false)
     }, 5000)
-
     return ()=> clearTimeout(timer)
+  }
+
+    
   }, [successMsg])
 
   return (

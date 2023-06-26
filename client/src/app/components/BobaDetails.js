@@ -14,7 +14,7 @@ const BobaDetails = ({ boba, modal, setModal }) => {
     
     const [size, setSize] = useState('large')
 
-    const [suger, setSuger] = useState('100% ')
+    const [suger, setSuger] = useState('100%')
 
     const [toppings, setToppings] = useState([])
 
