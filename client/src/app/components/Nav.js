@@ -25,9 +25,9 @@ const Nav = () => {
           <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">About</a>
         </li>
         <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">Features</a>        </li>
+        <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">Drinks</a>        </li>
         <li>
-        <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">Story</a>        </li>
+        <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">Promos</a>        </li>
         <li>
         <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-orange md:p-0 ">Contact</a>        </li>
       </ul>
