@@ -34,6 +34,7 @@ module.exports = {
                 tertiary: '#f77062',
                 black: '#231714',
                 orange: '#fe5196',
+                forange: '#FBA122'
             },
             backgroundImage: {
                 pattern: "url('/pattern.png')",

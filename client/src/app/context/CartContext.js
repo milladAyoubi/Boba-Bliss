@@ -138,6 +138,7 @@ useEffect(() => {
               cartAmount,
               itemAmount,
               cartTotal,
+              setCart,
               cart, }
         } >
 

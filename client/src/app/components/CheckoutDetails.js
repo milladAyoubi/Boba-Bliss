@@ -4,14 +4,56 @@ import Image from 'next/image'
 import { CartContext } from "../context/CartContext";
 
 
+
 const CheckoutDetails = ({setModal}) => {
   const { cart, setCart, cartTotal} = useContext(CartContext)
+  const [successMsg, setSuccessMsg] = useState(false) 
+  const [counter, setCounter] = useState(5)
+
+
+  useEffect(() => {
+    if(successMsg) {
+      const timer = setTimeout(() => {
+        if(counter > 1 ) {
+          setCounter(counter - 1)
+        }
+
+       
+      }, 1000)
+
+    
+      return () => clearTimeout(timer)
+    }
+  })
+
+  useEffect(()=> {
+    const timer = setTimeout(()=> {
+      setSuccessMsg(false)
+
+      setCart([])
+      setModal(false)
+    }, 5000)
+
+    return ()=> clearTimeout(timer)
+  }, [successMsg])
 
   return (
   <div> 
+    {successMsg ? (
+
+     <div className="flex flex-col justify-center items-center h-[100vh] lg:h-[600px] px-6">
+      <h2>Thank you! The order has been placed</h2>
+      <Image src={'/success-1.gif'} width={150} height={150} alt='' />
+      <div>
+        This window will close in <span>{counter}</span> seconds
+      </div>
+     </div>
+     
+     ) : (
+      
     <div className="lg:gap-x-8 h-full lg:px-12 lg:py-8 ">
       <h2 className="mb-6 text-[20px] uppercase font-bold text-center">Shipping & Checkout</h2>
-      <div className='h-[80vh] lg:h-[40.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
+      <div className='h-[80vh] lg:h-[36.5vh] flex flex-col lg:flex-row lg:gap-x-4'>
 
         <div className=" min-h-[400px] flex-1 h-full overflow-y-auto lg:overflow-visible py-4 px-8 lg:py-0 lg:px-0">
          
@@ -78,7 +120,7 @@ const CheckoutDetails = ({setModal}) => {
         </div>
 
         <div className=" flex-1 h-full lg:max-w-[40%] flex flex-col justify-between pt-3 px-8 lg:p-0">
-         <div>
+         <div className="border rounded-lg flex flex-col mb-4 p-4 h-full">
           <h3 className="">Your Order</h3> 
           <div >
             {cart.map((boba, index) => {
@@ -107,9 +149,13 @@ const CheckoutDetails = ({setModal}) => {
             })}
           </div>
          </div>
+         <button onClick={() => setSuccessMsg(true)}className="btn justify-center btn-lg gradient w-full text-center">
+          Place Order
+         </button>
         </div>
         </div>
       </div>
+        )}
     </div>
 
   

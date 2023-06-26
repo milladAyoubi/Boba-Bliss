@@ -8,6 +8,7 @@ import CartMobileIcon from './components/CartMobileIcon';
 import CartProvider from './context/CartContext'
 import CartMobile from './components/CartMobile';
 import CartDesktop from './components/CartDesktop';
+import Footer from './components/Footer'
 
 
 const raleway = Raleway({
@@ -34,8 +35,11 @@ export default function RootLayout({ children }) {
         <CartMobile/>
         { children } 
         <CartDesktop/>
+        <Footer/>
         </body>
+       
       </html >
       </CartProvider>
+     
     );
 }
