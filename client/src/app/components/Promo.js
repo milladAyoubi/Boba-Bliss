@@ -10,7 +10,7 @@ const Promo = () => {
   <section  className=' relative bottom-26' id="features">
     <div className='container mx-auto'>
     <div className='flex flex-col items-center gap-x-10 lg:flex-row justify-end' >
-      <div>
+      <div className='max-w-[300px] mb-8 lg:m-0 lg:max-w-[500px]'>
 
       <Image src={'/promo-image.png'} width={760} height={760} alt='' priority={1}/>
       </div>

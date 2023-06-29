@@ -153,7 +153,8 @@ export default function Home() {
     
     <section> 
         <Banner/>
-        <div className='container mx-auto'>
+        <div className='container mx-auto flex flex-col'>
+            <h1 className='text-3xl lg:text-4xl font-poppins font-bold text-indigo text-center mt-16 lg:mt-0 lg:mb-12 pb-3 border-b-4 border-forange min-w-[400px] m-auto'>Featured Drinks</h1>
             <div className='grid grid-cols-2 gap-[15px] md::grid-cols-3 xl:grid-cols-4 xl:gap-[30px] py-12 '>
                 {boba.map((boba, index) => {
                     return <Boba boba={boba} key={index}/>

@@ -22,7 +22,7 @@
     @apply text-black;
   }
   .btn {
-    @apply rounded-xl font-semibold transition-all;
+    @apply rounded-full font-semibold transition-all;
   }
   .btn-sm {
     @apply py-3 px-6;
@@ -31,10 +31,10 @@
     @apply py-4 px-6;
   }
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary/90;
+    @apply rounded-full bg-primary text-white hover:bg-primary/90;
   }
   .btn-secondary {
-    @apply bg-secondary text-white hover:bg-secondary/90;
+    @apply rounded-full bg-secondary text-white hover:bg-secondary/90;
   }
   .input {
     @apply py-4 px-6;

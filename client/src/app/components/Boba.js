@@ -36,8 +36,11 @@ const Boba = ({boba}) => {
 
    
     return (
+
+    
     
     <div className="group py-2  px-4 xl:py-4 xl:-px-2 rounded-xl lg:relative bottom-16">
+       
         <Image onClick={openModal} className="lg:group-hover:-translate-y-5 transition-all duration-300 mb-8 cursor-pointer" 
         width={270} height={270} src={boba.image} alt='' priority={1} />
         
@@ -52,7 +55,7 @@ const Boba = ({boba}) => {
 
             <button onClick={openModal} className="hidden lg:flex gradient text-white rounded-lg btn-sm font-semibold text-sm">Choose</button>
 
-            <button onClick={openModal} className="btn btn-sm gradient text-sm lg:hidden px-3">Starts at {boba.priceSm}</button>
+            <button onClick={openModal} className="btn rounded-full btn-sm gradient text-sm lg:hidden px-3">Starts at {boba.priceSm}</button>
         </div>
 
         {modal &&
