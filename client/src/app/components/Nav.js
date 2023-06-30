@@ -22,7 +22,7 @@ const Nav = () => {
   window.addEventListener('scroll', changeBackground)
 
   return (
-  <nav className={navbar ? 'bg-forange w-full py-4 z-10 fixed shadow-sm' : 'w-full py-4 z-10 relative'}>
+  <nav className={navbar ? 'bg-white w-full py-4 z-10 fixed shadow-lg transition ease-in' : 'w-full py-4 z-10 fixed transition ease-in'}>
       <div className="container mx-auto flex flex-col lg: lg:flex-row gap-y-3 justify-between items-center">
         <Link href="#">
           <Image src={'logo.svg'} width={180} height={180} alt='' ></Image>
