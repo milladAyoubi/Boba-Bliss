@@ -39,6 +39,7 @@ module.exports = {
             backgroundImage: {
                 pattern: "url('/pattern.png')",
                 promo: "url('/promo.png')",
+                para: "url('/smoothie.png')",
             },
 
 

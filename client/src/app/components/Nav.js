@@ -16,7 +16,7 @@ const Nav = () => {
     else {
       setNavBar(false)
     }
-    console.log(window.scrollY)
+  
   }
 
   window.addEventListener('scroll', changeBackground)
