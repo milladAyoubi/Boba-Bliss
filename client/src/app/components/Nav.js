@@ -9,21 +9,6 @@ const Nav = () => {
   const [navbar, setNavBar] = useState(false)
   const {isOpen, setIsOpen, itemAmount} = useContext(CartContext)
 
-  const changeBackground = () => { 
-    if(window.scrollY >= 80) {
-      setNavBar(true)
-    }
-    else {
-      setNavBar(false)
-    }
-  
-  }
-
-useEffect(() => {
-  changeBackground()
-}, [])
-
-
 
 
   return (
