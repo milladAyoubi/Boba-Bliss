@@ -1,14 +1,28 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import { CartContext } from "../context/CartContext";
 
 
 const Nav = () => {
+  const [navbar, setNavBar] = useState(false)
   const {isOpen, setIsOpen, itemAmount} = useContext(CartContext)
+
+  const changeBackground = () => { 
+    if(window.scrollY >= 80) {
+      setNavBar(true)
+    }
+    else {
+      setNavBar(false)
+    }
+    console.log(window.scrollY)
+  }
+
+  window.addEventListener('scroll', changeBackground)
+
   return (
-  <nav className=" w-full py-4 z-10 relative ">
+  <nav className={navbar ? 'bg-forange w-full py-4 z-10 fixed shadow-sm' : 'w-full py-4 z-10 relative'}>
       <div className="container mx-auto flex flex-col lg: lg:flex-row gap-y-3 justify-between items-center">
         <Link href="#">
           <Image src={'logo.svg'} width={180} height={180} alt='' ></Image>
