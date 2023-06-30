@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { CartContext } from "../context/CartContext";
 
 
@@ -19,10 +19,15 @@ const Nav = () => {
   
   }
 
-  window.addEventListener('scroll', changeBackground)
+useEffect(() => {
+  changeBackground()
+}, [])
+
+
+
 
   return (
-  <nav className={navbar ? 'bg-white w-full py-4 z-10 fixed shadow-lg transition ease-in' : 'w-full py-4 z-10 fixed transition ease-in'}>
+  <nav className={navbar ? 'bg-white w-full py-4 z-10 fixed shadow-lg transition ease-in' : 'w-full py-4 z-10 fixed transition ease-in bg-forange'}>
       <div className="container mx-auto flex flex-col lg: lg:flex-row gap-y-3 justify-between items-center">
         <Link href="#">
           <Image src={'logo.svg'} width={180} height={180} alt='' ></Image>
