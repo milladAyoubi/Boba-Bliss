@@ -12,7 +12,7 @@ const Nav = () => {
 
 
   return (
-  <nav className={navbar ? 'bg-white w-full py-4 z-10 fixed shadow-lg transition ease-in' : 'w-full py-4 z-10 fixed transition ease-in bg-forange'}>
+  <nav className={navbar ? 'bg-white w-full py-4 z-10 fixed shadow-lg ' : 'w-full py-4 z-10 fixed  bg-forange'}>
       <div className="container mx-auto flex flex-col lg: lg:flex-row gap-y-3 justify-between items-center">
         <Link href="#">
           <Image src={'logo.svg'} width={180} height={180} alt='' ></Image>
