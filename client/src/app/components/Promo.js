@@ -15,7 +15,7 @@ const Promo = () => {
       <Image src={'/promo-image.png'} width={760} height={760} alt='' priority={1}/>
       </div>
 
-    <div  className='sm:mt-12 mb-12' data-aos="fade-left" data-aos-delay="500"data-aos-duration="1200">
+    <div  className='sm:mt-12 mb-12' data-aos="fade-right" data-aos-delay="500"data-aos-duration="1200">
 
       <div className='text-indigo flex gap-6 py-5 px-10 buissness-icon-container '>
         <div className='buissness-icon bg-blue/10 m-auto'>

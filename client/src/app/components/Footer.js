@@ -41,7 +41,7 @@ const Footer = () => {
      
 
       </div>
-      <div className="text-white font-medium">
+      <div className="text-white font-medium text-center">
         Copyright &copy; Boba Bliss 2023. All Rights Reserved
       </div>
       </div>
