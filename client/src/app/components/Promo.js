@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Promo = () => {
   return (
   
-  <section  className=' relative bottom-26' id="features">
+  <section  className=' relative bottom-26' id="features" >
     <div className='container mx-auto'>
     <div className='flex flex-col items-center gap-x-10 lg:flex-row justify-end' >
       <div className='w-[80%] mb-8 lg:m-0 lg:max-w-[500px]'>
@@ -15,7 +15,7 @@ const Promo = () => {
       <Image src={'/promo-image.png'} width={760} height={760} alt='' priority={1}/>
       </div>
 
-    <div  className='sm:mt-12 mb-12' data-aos="fade-left" data-aos-delay="1000"data-aos-duration="1200">
+    <div  className='sm:mt-12 mb-12' data-aos="fade-left" data-aos-delay="500"data-aos-duration="1200">
 
       <div className='text-indigo flex gap-6 py-5 px-10 buissness-icon-container '>
         <div className='buissness-icon bg-blue/10 m-auto'>

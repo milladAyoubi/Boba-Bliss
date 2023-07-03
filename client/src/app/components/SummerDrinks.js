@@ -6,8 +6,8 @@ import {IoIosArrowDroprightCircle} from 'react-icons/io';
 const SummerDrinks = () => {
   return (
   
-  <section  className='section lg:mt-[-50px]' id="crypto">
-    <div className='container mx-auto'>
+  <section  className='section lg:mt-[-50px]' id="crypto" data-aos="fade-right" data-aos-delay="500"data-aos-duration="1200">
+    <div className='container mx-auto' >
     <div className='flex flex-col items-center gap-x-10 lg:flex-row' >
      <div className='lg:max-w-[700px]'>
             <h2 className='section-title'>Summer Drink Days Are Back!</h2>

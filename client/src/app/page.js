@@ -1,9 +1,14 @@
 // import components
+"use client";
 import Boba from './components/Boba';
 import Banner from './components/Banner';
 import Promo from './components/Promo'
-
 import SummerDrinks from './components/SummerDrinks';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { useEffect } from 'react';
+
 
 // pizza data
 const boba = [{
@@ -151,11 +156,18 @@ const boba = [{
 ];
 
 export default function Home() {
+    useEffect(()=> {
+        AOS.init({
+          duration: 100, 
+          delay: 0,
+        })
+      })
+      
     return (
     
     <section> 
         <Banner/>
-        <div className='container mx-auto flex flex-col'>
+        <div className='container mx-auto flex flex-col '>
             <h1 className='text-3xl lg:text-4xl font-poppins font-bold text-indigo text-center mt-16 lg:mt-0 lg:mb-12 pb-3 border-b-4 border-forange min-w-[300px] m-auto'>Featured Drinks</h1>
             <div className='grid grid-cols-2 gap-[15px] md::grid-cols-3 xl:grid-cols-4 xl:gap-[30px] py-12 '>
                 {boba.map((boba, index) => {
