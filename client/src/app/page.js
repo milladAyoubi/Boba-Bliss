@@ -3,6 +3,7 @@ import Boba from './components/Boba';
 import Banner from './components/Banner';
 import Promo from './components/Promo'
 import About from './components/About'
+import SummerDrinks from './components/SummerDrinks';
 
 // pizza data
 const boba = [{
@@ -162,7 +163,7 @@ export default function Home() {
                 })}
             </div>
         </div>
-        
+        <SummerDrinks/>
         <Promo/>
     </section>
 

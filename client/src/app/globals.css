@@ -25,16 +25,16 @@
     @apply rounded-full font-semibold transition-all;
   }
   .btn-sm {
-    @apply py-3 px-6;
+    @apply rounded-full py-3 px-6;
   }
   .btn-lg {
-    @apply py-4 px-6;
+    @apply rounded-full py-4 px-6;
   }
   .btn-primary {
-    @apply rounded-full bg-primary text-white hover:bg-primary/90;
+    @apply rounded-full bg-primary text-white hover:bg-primary;
   }
   .btn-secondary {
-    @apply rounded-full bg-secondary text-white hover:bg-secondary/90;
+    @apply rounded-full bg-secondary text-white hover:bg-secondary;
   }
   .input {
     @apply py-4 px-6;

@@ -10,14 +10,14 @@ const Promo = () => {
   <section  className=' relative bottom-26' id="features">
     <div className='container mx-auto'>
     <div className='flex flex-col items-center gap-x-10 lg:flex-row justify-end' >
-      <div className='max-w-[300px] mb-8 lg:m-0 lg:max-w-[500px]'>
+      <div className='w-[80%] mb-8 lg:m-0 lg:max-w-[500px]'>
 
       <Image src={'/promo-image.png'} width={760} height={760} alt='' priority={1}/>
       </div>
 
     <div  className='sm:mt-12 mb-12' data-aos="fade-left" data-aos-delay="1000"data-aos-duration="1200">
 
-      <div className='flex gap-6 py-5 px-10 buissness-icon- '>
+      <div className='lg:flex gap-6 py-5 px-10 buissness-icon- '>
         <div className='buissness-icon bg-blue/10 m-auto'>
         <Image src={'/icon-star.png'} width={100} height={100} alt='' priority={1}/>
     

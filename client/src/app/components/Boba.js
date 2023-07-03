@@ -53,7 +53,7 @@ const Boba = ({boba}) => {
         <div className="mb-6 flex items-center justify-between">
             <div className="hidden lg:flex text-xl font-semibold">Start at {boba.priceSm}</div>
 
-            <button onClick={openModal} className="hidden lg:flex gradient text-white rounded-lg btn-sm font-semibold text-sm">Choose</button>
+            <button onClick={openModal} className="hidden lg:flex gradient text-white rounded-full btn-sm font-semibold text-sm">Choose</button>
 
             <button onClick={openModal} className="btn rounded-full btn-sm gradient text-sm lg:hidden px-3">Starts at {boba.priceSm}</button>
         </div>

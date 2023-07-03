@@ -29,11 +29,11 @@ module.exports = {
 
             },
             colors: {
-                primary: '#FB7022',
+                primary: '#FFA100',
                 secondary: '#FB7022',
                 tertiary: '#FB7022',
                 black: '#231714',
-                orange: '#F06278',
+                orange: '#F5846A',
                 forange: '#FBA122'
             },
             backgroundImage: {
