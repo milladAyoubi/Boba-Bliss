@@ -4,6 +4,7 @@ import Boba from './components/Boba';
 import Banner from './components/Banner';
 import Promo from './components/Promo'
 import SummerDrinks from './components/SummerDrinks';
+import Newsletter from './components/Newsletter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -176,6 +177,7 @@ export default function Home() {
             </div>
         </div>
         <SummerDrinks/>
+        <Newsletter/>
         <Promo/>
     </section>
 

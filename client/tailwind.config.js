@@ -40,6 +40,7 @@ module.exports = {
                 pattern: "url('/pattern.png')",
                 promo: "url('/promo.png')",
                 para: "url('/smoothie.png')",
+                newsletter: "url('/Newsletter-Image.png')",
             },
 
 

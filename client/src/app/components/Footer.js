@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='container mx-auto lg:mb-12'>
            <div className='flex flex-col gap-12  lg:flex-row '>
            <div className='flex flex-col flex-1 lg:max-w-[400px]'>
-                  <div className=' flex flex-col gap-4 m-auto pt-12 lg:m-0'>
+                  <div className=' flex flex-col gap-4 m-auto pt-12 lg:m-0 lg:pt-2'>
                       
                       <Image src={'/logo.svg'} width={160} height={160} alt='' priority={1}/>
 
