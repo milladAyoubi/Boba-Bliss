@@ -151,7 +151,7 @@ const CheckoutDetails = ({setModal}) => {
             })}
           </div>
          </div>
-         <button onClick={() => setSuccessMsg(true)}className="btn justify-center btn-lg gradient w-full text-center">
+         <button onClick={() => {setSuccessMsg(true); setCart([])} } className="btn justify-center btn-lg gradient w-full text-center">
           Place Order
          </button>
         </div>

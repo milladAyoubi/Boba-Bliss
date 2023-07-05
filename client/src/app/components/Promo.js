@@ -12,7 +12,7 @@ const Promo = () => {
     <div className='flex flex-col items-center gap-x-10 lg:flex-row justify-end' >
       <div className='w-[80%] mb-8 lg:m-0 lg:max-w-[500px]'>
 
-      <Image src={'/promo-image.png'} width={760} height={760} alt='' priority={1}/>
+      <Image src={'/promo-image.png'} width={760} height={760} alt='' className=' lg:hover:rotate-12 transition-all duration-300' priority={1}/>
       </div>
 
     <div  className='sm:mt-12 mb-12' data-aos="fade-right" data-aos-delay="500"data-aos-duration="1200">

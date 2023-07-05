@@ -14,12 +14,14 @@
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
+    "node-fetch": "^3.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "react-modal": "^3.16.1",
     "react-parallax": "^3.5.1",
     "react-parallax-mouse": "^2.0.1",
+    "react-scroll": "^1.8.9",
     "tailwind-scrollbar": "^3.0.0"
   },
   "devDependencies": {

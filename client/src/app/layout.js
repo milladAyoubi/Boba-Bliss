@@ -1,4 +1,6 @@
 // css
+"use client"
+import React, {useState} from 'react'
 import './globals.css';
 import { Raleway, Poppins, OpenSans } from 'next/font/google'
 
@@ -9,6 +11,8 @@ import CartProvider from './context/CartContext'
 import CartMobile from './components/CartMobile';
 import CartDesktop from './components/CartDesktop';
 import Footer from './components/Footer'
+import NavMobile from './components/NavMobile';
+import { fromJSON } from 'postcss';
 
 
 const raleway = Raleway({
@@ -25,12 +29,16 @@ const poppins = Poppins({
 
 
 export default function RootLayout({ children }) {
+  const [navMobile, setNavMobile] = useState(false);
     return ( 
 
       <CartProvider>
       <html lang = 'en' >
         <body className={`${raleway.variable} ${poppins.variable} font-poppins`}> 
         <Nav/>
+        <div className={`${navMobile ? 'right-0' : '-right-full'} fixed z-10 top-0 h-full transition-all duration-200`}>
+        <NavMobile setNavMobile={setNavMobile}/>
+        </div>
         <CartMobileIcon/>
         <CartMobile/>
         { children } 
