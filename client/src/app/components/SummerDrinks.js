@@ -19,7 +19,7 @@ const SummerDrinks = () => {
 
     <div  className="lg:relative lg:bottom-8 "  >
 
-    <Image src={'/Summer-Image.png'} width={560} height={560} alt='' className='lg:hover:-rotate-12 transition-all duration-300'  priority={1}/>
+    <Image src={'/Summer-Image.png'} width={860} height={660} alt='' className='lg:hover:-rotate-12 transition-all duration-300'  priority={1}/>
 
      
     </div>

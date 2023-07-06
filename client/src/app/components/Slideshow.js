@@ -6,7 +6,7 @@ const Slideshow = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide === images.length - 1 ? 0 : prevSlide + 1));
-    }, 1600);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [images]);
@@ -16,7 +16,7 @@ const Slideshow = ({ images }) => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`slide ${index === currentSlide ? 'active' : ''} rounded-2xl`}
+          className={`slide ${index === currentSlide ? 'active' : ''} lg:rounded-2xl`}
           style={{
             backgroundImage: `url(${image})`,
             opacity: index === currentSlide ? 1 : 0,
@@ -40,7 +40,7 @@ const Slideshow = ({ images }) => {
           height: 400px;
           background-size: cover;
           background-position: center;
-          transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.6s ease-in-out;
         }
 
         .slide.active {
