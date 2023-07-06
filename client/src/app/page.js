@@ -7,8 +7,10 @@ import SummerDrinks from './components/SummerDrinks';
 import Newsletter from './components/Newsletter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Slideshow from './components/Slideshow';
 
 import { useEffect } from 'react';
+
 
 
 // pizza data
@@ -156,6 +158,14 @@ const boba = [{
    
 ];
 
+const images = [
+    'fruit-1.png',
+    'fruit-2.png',
+    'fruit-3.png',
+    'fruit-4.png',
+    // Add more image URLs as needed
+  ];
+
 export default function Home() {
     useEffect(()=> {
         AOS.init({
@@ -176,6 +186,7 @@ export default function Home() {
                 })}
             </div>
         </div>
+        <Slideshow images={images}/>
         <SummerDrinks/>
         <Newsletter/>
         <Promo/>
