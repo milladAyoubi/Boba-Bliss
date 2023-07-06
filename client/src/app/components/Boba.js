@@ -48,7 +48,7 @@ const Boba = ({boba}) => {
             <div className="text-xl font-bold mb-3 capitilize cursor-pointer">{boba.name}</div>
         </div>
 
-        <div className="text-sm font-medium min-h-[60px] mb-6 ">{boba.description}</div>
+        <div className="text-sm font-medium min-h-[60px] mb-6 hidden lg:flex ">{boba.description}</div>
    
         <div className="mb-6 flex items-center justify-between">
             <div className="hidden lg:flex text-xl font-semibold">Start at {boba.priceSm}</div>

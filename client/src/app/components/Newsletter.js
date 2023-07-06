@@ -14,10 +14,10 @@ const Newsletter = () => {
             </div>
 
             <div className=' m-auto flex flex-col '>
-                       <form action="" className='bg-white lg:py-3 lg:pl-10 lg:pr-3 py-1 px-1 rounded-full flex gap-4 w-[100%]'>
-                            <input type="email" placeholder='Enter Email'/>
+                       <form action="" className='bg-white lg:py-3 lg:pl-10 lg:pr-3 py-2 px-2 rounded-full flex gap-4 w-[100%]'>
+                            <input type="email" placeholder='Enter Email' className='bg-none w-[100%]'/>
 
-                            <a href="#"><button className='gradient lg:py-2 lg:px-5 rounded-full p-0.5 pointer'>Subscribe</button></a>
+                            <a href="#"><button className='gradient lg:py-2 lg:px-5 rounded-full p-1 pointer'>Subscribe</button></a>
                        </form>
 
             </div>
