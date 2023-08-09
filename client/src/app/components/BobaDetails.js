@@ -64,7 +64,7 @@ const BobaDetails = ({ boba, modal, setModal }) => {
 
         <div className='flex flex-col flex-1'>
             <div className='flex-1 p-2 text-center lg:text-left'>
-                <div className='flex-1 bg-white overflow-y-scroll h-[36vh] scrollbar-thin scrollbar-thumb-red-200  '>
+                <div className='flex-1 bg-white overflow-y-scroll h-[400px] scrollbar-thin scrollbar-thumb-red-200  '>
                     <div className='font-semibold'>
                         <h2 className='capitalize text-3xl mb-1'>{boba.name}</h2>
                         <div className=' mb-6 text-lg font-medium'>
